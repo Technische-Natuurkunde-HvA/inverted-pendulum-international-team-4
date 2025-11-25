@@ -2,7 +2,6 @@
     - Great you let the motor spin in both directions.
     - Excellent you take some time to let the motor reach constant speed.
     - The whole measurement process seems to be thought out and automized well.
-    - @Manfred Niehus can you find any flaws in their code? To me it seems fine, but I’m not enough of an expert to be sure.
 - Wonderful you have included a python script which both saves and plots the data.
 - The weekly progress update is not filled out at all. How come? Let us know if you have any difficulties using GitHub, so we can help.
 - The .DS_store files can best be deleted.
