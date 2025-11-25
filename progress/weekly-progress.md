@@ -11,7 +11,7 @@ Use the GitHub repository to store important project files (code, visuals includ
 
 ---
 
-# Week 1
+# Week 2
 
 ## 1. Progress description
 Describe the progress of your work for this week. Keep it clear and concise.
