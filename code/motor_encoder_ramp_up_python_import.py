@@ -19,8 +19,8 @@ output_file = "motor_data.csv"  # Change this to .txt if preferred
 
 # Prepare CSV writer if saving as CSV
 with open(output_file, mode='w', newline='') as file:
-    csv_writer = csv.writer(file)
-    csv_writer.writerow(['Timestamp', 'Output', 'Frequency (Hz)', 'RPM'])  # CSV headers
+    csv_writer = csv.writer(file, delimiter=',')  # Ensure delimiter is set to a comma
+    csv_writer.writerow(['Time (s)', 'Output', 'Frequency (Hz)', 'RPM'])  # CSV headers with time in seconds
 
     print("Start reading data... Press Ctrl+C to stop.")
 
@@ -40,13 +40,13 @@ with open(output_file, mode='w', newline='') as file:
                     frequency = parts[1].split(":")[1].strip()  # Get the value after "Frequency:"
                     rpm = parts[2].split(":")[1].strip()  # Get the value after "RPM:"
 
-                    # Get the current timestamp
-                    timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
+                    # Get the current timestamp in seconds since the epoch
+                    current_time = int(time.time())  # Get time in seconds since the epoch
 
-                    # Write data to CSV
-                    csv_writer.writerow([timestamp, output, frequency, rpm])
+                    # Write data to CSV (including the timestamp in seconds)
+                    csv_writer.writerow([current_time, output, frequency, rpm])  # Each value as a separate column
 
-                    print(f"Logged: {timestamp} - Output: {output} Frequency: {frequency} RPM: {rpm}")
+                    print(f"Logged: Time: {current_time} - Output: {output} Frequency: {frequency} RPM: {rpm}")
 
                 except Exception as e:
                     print(f"Error parsing line: {e}")
