@@ -53,13 +53,13 @@ void loop() {
   analogWrite(enablePin, abs(output));
 
   // calculate frequency
-  if (millis() - lastTime >= 200) {
+  if (millis() - lastTime >= 500) { // don't change the 500 ms value, completly breaks frequency (and therefore RPM) calculation, changing the value that pulsesPerRevolution multiplies with doesn't really fix it
     noInterrupts();
     int count = pulseCount;
     pulseCount = 0;
     interrupts();
 
-    frequency = count / (pulsesPerRevolution * 0.5);  // frequency in Hz
+    frequency = count / (pulsesPerRevolution * 0.5);
     RPM = frequency * 60 / gearRatio;
 
     Serial.print("Output: ");
