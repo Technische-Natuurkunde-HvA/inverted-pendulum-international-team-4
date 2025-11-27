@@ -16,12 +16,13 @@ double RPM = 0;
 double output = -255;  // start at the minimum motor output value
 const double gearRatio = 9.6;
 
-const double incrementRate = 0.05; // how much the output changes per loop
+const double incrementRate = 0.05;        // how much the output changes per loop
 const unsigned long updateInterval = 10;  // Interval to update output (in milliseconds)
 
 void countPulse();
 
 void setup() {
+  delay(5000);  // delay 5 seconds to give us time to connect to python
   pinMode(motorPin1, OUTPUT);
   pinMode(motorPin2, OUTPUT);
   pinMode(enablePin, OUTPUT);
