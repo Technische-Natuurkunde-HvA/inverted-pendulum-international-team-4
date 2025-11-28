@@ -127,7 +127,6 @@ void loop() {
   void countPulse() {
     pulseCount++; // increment each pulse
   }
-ading Motor_encoder_V1.ino…]()
 ```
 
 ## 3. Measurment protocol
