@@ -167,5 +167,5 @@ This is the graph that shows the resulst of the group from Portugal and the grou
 
 ## 5. Reflection 
 Our improvements for the next week will be to make a new design for the fly wheel. We want to make the wheel bigger and thinner. If we do this we would have a bigger moment of inertia (following the formula I=m*r^2). We also want to try to balance the wheel consistently. 
-The deviation of the RPM of about 150 from the Netherlands's and Portugal's motors is due to the voltage utilized for the measurements. In the Netherlands the power supply was set to 12V as with Portugal it was set to 13.6V. Since the driver is expected to drop some of the voltage from the power supply before reaching the motor, the voltage reaching the motor was slightly smaller in the Netherlands, reaching this disparity of around 150 RPM when at maximum power (255 PWM).
+<p>The deviation of the RPM of about 150 from the Netherlands's and Portugal's motors is due to the voltage utilized for the measurements. In the Netherlands the power supply was set to 12V as with Portugal it was set to 13.6V. Since the driver is expected to drop some of the voltage from the power supply before reaching the motor, the voltage reaching the motor was slightly smaller in the Netherlands, reaching this disparity of around 150 RPM when at maximum power (255 PWM).</p>
 
