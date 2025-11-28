@@ -17,8 +17,8 @@ Use the GitHub repository to store important project files (code, visuals includ
 In the Netherlands we worked on the pendulum this week. We started with a spining wheel with no motion in the arm. After we had some difficulties with the code we managed to get the pendulum to move. We started with a swinging arm (see the video in results) but Somtimes we were able to balance it but it was not consistent. 
 
 ## 2. Code
-
-[Uplo// Motor control pins 
+```c
+// Motor control pins 
 const int motorPin1 = 10; //IN1
 const int motorPin2 = 11; //IN2
 const int enablePin = 9; //ENA (PWM pin for speed control)
@@ -128,7 +128,7 @@ void loop() {
     pulseCount++; // increment each pulse
   }
 ading Motor_encoder_V1.ino…]()
-
+```
 
 ## 3. Measurment protocol
 There will be measured at 8 different PWM values in both directions.
