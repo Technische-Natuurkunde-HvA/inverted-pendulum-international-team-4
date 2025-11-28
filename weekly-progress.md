@@ -157,6 +157,9 @@ Here is a video of the Flywheel:
 
 https://github.com/user-attachments/assets/1bf1f06c-9694-4833-a927-8c63ff81f303
 
+This is the graph that shows the resulst of the group from Portugal and the group from the Netherlands combined:
+<img width="1137" height="705" alt="image (1)" src="https://github.com/user-attachments/assets/78d7b7f8-44a5-4847-ad13-10750d1b12b2" />
+
 
 ## 5. Reflection 
 Our improvmends for the next week will be to make a new design for the fly wheel. We want to make the wheel bigger and thinner. If we do this we would have a bigger moment of inertia. We also want to try to balance the wheel consistently. 
