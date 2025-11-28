@@ -17,6 +17,7 @@ Use the GitHub repository to store important project files (code, visuals includ
 In the Netherlands we worked on the pendulum this week. We started with a spining wheel with no motion in the arm. After we had some difficulties with the code we managed to get the pendulum to move. We started with a swinging arm (see the video in results) but Somtimes we were able to balance it but it was not consistent. 
 
 ## 2. Code
+- Code used in the Netherlands:
 ```c
 // Motor control pins 
 const int motorPin1 = 10; //IN1
@@ -128,6 +129,9 @@ void loop() {
     pulseCount++; // increment each pulse
   }
 ```
+
+- Code used in Portugal:
+(the code for Portugal will be added on tuesday (2/12/2025), as we have no way to retrieve it currently)
 
 ## 3. Measurment protocol
 There will be measured at 8 different PWM values in both directions.
