@@ -14,7 +14,7 @@ Use the GitHub repository to store important project files (code, visuals includ
 # Week 3
 
 ## 1. Progress description
-Describe the progress of your work for this week. Keep it clear and concise.
+This week we worked on the pendulum. We started with a spining wheel with no motion in the arm. After we had some difficulties with the code we managed to get the pendulum to move. We started with a swinging arm (see the video in results) but Somtimes we were able to balance it but it was not consistent. 
 
 ## 2. Code
 
@@ -53,13 +53,17 @@ This is expected because at the maximum PWM value, one would anticipate to reach
 
 To upload and modify the code arduino IDE is used. A serial moniter will print the data and a python file will read the serial moniter and generate a csv file from the data and, if possible, creates plots.
 
-- arduino IDE voor uploaden en bewerken van code
-- serial moniter print data uit\
-- python bestand leest serial moniter en maakt csv file van uitgelezen data en eventueel plots
 
 ## 4. Results
-Present your results here. This may include tables, figures, or charts.
-Add charts and other visuals to the `visuals` folder in the GitHub repository and reference them in this document if needed.
+The following graph shows the results:
+
+
+This graph deviates from the expected graph. This is because in reality there is friction
+
+Here is a video of the Flywheel:
+
+
+https://github.com/user-attachments/assets/1bf1f06c-9694-4833-a927-8c63ff81f303
 
 
 ## 5. Reflection 
