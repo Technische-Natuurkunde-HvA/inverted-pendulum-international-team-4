@@ -151,7 +151,7 @@ To upload and modify the code arduino IDE is used. A serial moniter will print t
 
 ## 4. Results
 The following graph shows the results:
-![WhatsApp Image 2025-11-28 at 14 32 18](https://github.com/user-attachments/assets/b4ce2a50-342c-4867-a038-0a8fc6dbc08e)
+<p>![WhatsApp Image 2025-11-28 at 14 32 18](https://github.com/user-attachments/assets/b4ce2a50-342c-4867-a038-0a8fc6dbc08e)</p>
 
 
 This graph deviates from the expected graph. This is because in reality there is friction
