@@ -14,7 +14,7 @@ Use the GitHub repository to store important project files (code, visuals includ
 # Week 3
 
 ## 1. Progress description
-This week we worked on the pendulum. We started with a spining wheel with no motion in the arm. After we had some difficulties with the code we managed to get the pendulum to move. We started with a swinging arm (see the video in results) but Somtimes we were able to balance it but it was not consistent. 
+In the Netherlands we worked on the pendulum this week. We started with a spining wheel with no motion in the arm. After we had some difficulties with the code we managed to get the pendulum to move. We started with a swinging arm (see the video in results) but Somtimes we were able to balance it but it was not consistent. 
 
 ## 2. Code
 
@@ -56,6 +56,7 @@ To upload and modify the code arduino IDE is used. A serial moniter will print t
 
 ## 4. Results
 The following graph shows the results:
+![WhatsApp Image 2025-11-28 at 14 32 18](https://github.com/user-attachments/assets/b4ce2a50-342c-4867-a038-0a8fc6dbc08e)
 
 
 This graph deviates from the expected graph. This is because in reality there is friction
