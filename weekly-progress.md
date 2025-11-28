@@ -18,27 +18,7 @@ In the Netherlands we worked on the pendulum this week. We started with a spinin
 
 ## 2. Code
 
-You can display code using three backticks (```) followed by an optional language extension.  
-For example:  
-- For C/C++ code, use `c` or `cpp`.  
-- For Python, use `python`.
 
-
-#### Example:
-
-```c
-// Header file for input/output functions
-#include <stdio.h>
-
-// Main function: entry point for execution
-int main() {
-
-    // Print a message to the console
-    printf("Hello World");
-
-    return 0;
-}
-```
 ## 3. Measurment protocol
 There will be measured at 8 different PWM values in both directions.
 The values will be: 50, 80, 110, 140, 170, 200, 230, 255
@@ -68,5 +48,6 @@ https://github.com/user-attachments/assets/1bf1f06c-9694-4833-a927-8c63ff81f303
 
 
 ## 5. Reflection 
-What did you learn this week?
-What should you focus on or improve in the coming weeks of the project?
+Our improvmends for the next week will be to make a new design for the fly wheel. We want to make the wheel bigger and thinner. If we do this we would have a bigger moment of inertia. We also want to try to balance the wheel consistently. 
+
+
