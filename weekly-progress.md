@@ -14,8 +14,8 @@ Use the GitHub repository to store important project files (code, visuals includ
 # Week 3
 
 ## 1. Progress description
-In the Netherlands we worked on the pendulum this week. We started with a spining wheel with no motion in the arm. After we had some difficulties with the code we managed to get the pendulum to move. We started with a swinging arm (see the video in results) but Somtimes we were able to balance it but it was not consistent. 
-In Portugal, we started off with the base code that was made available to us, directly applying a way to measure the RPM from the frequency calculation already integrated. This was done by simply multiplying the frequency by the 60 seconds in a minute and diving it by 9.6, which is the reduction rate of our motor. After this, the approach used was slightly different. Instead of measuring the different RPM values for each PWM stated, we decided to use our script to incremenet the PWM value at a rate of 1 PWM every 0.2 seconds.
+<p>In the Netherlands we worked on the pendulum this week. We started with a spining wheel with no motion in the arm. After we had some difficulties with the code we managed to get the pendulum to move. We started with a swinging arm (see the video in results) but Somtimes we were able to balance it but it was not consistent. 
+<p>In Portugal, we started off with the base code that was made available to us, directly applying a way to measure the RPM from the frequency calculation already integrated. This was done by simply multiplying the frequency by the 60 seconds in a minute and diving it by 9.6, which is the reduction rate of our motor. After this, the approach used was slightly different. Instead of measuring the different RPM values for each PWM stated, we decided to use our script to incremenet the PWM value at a rate of 1 PWM every 0.2 seconds.
 
 ## 2. Code
 - Code used in the Netherlands:
