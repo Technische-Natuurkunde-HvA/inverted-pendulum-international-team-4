@@ -173,7 +173,7 @@ Our improvements for the next week will be to make a new design for the fly whee
 
 ---
 
-# Week 3
+# Week 4
 
 ## 1. Progress description
 
