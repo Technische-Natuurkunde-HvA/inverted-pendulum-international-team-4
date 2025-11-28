@@ -134,7 +134,7 @@ void loop() {
 - Code used in Portugal:
 <p>(the code for Portugal will be added on tuesday (2/12/2025), as we have no way to retrieve it currently)</p>
 
-## 3. Measurment protocol
+## 3. Measurement protocol
 There will be measured at 8 different PWM values in both directions.
 The values will be: 50, 80, 110, 140, 170, 200, 230, 255
 
