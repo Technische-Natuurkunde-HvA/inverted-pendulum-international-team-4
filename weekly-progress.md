@@ -46,7 +46,7 @@ volatile long pulseCount = 0; // pulse counter (long = safer)
 const int pulsePerRevolution = 11; // pulses per motor shaft revolution from each encode3r wire
 
 // IMPORTANT!! check your motors gear ratio from the datasheet
-const float gearRatio = ___; // TO DO: change value
+const float gearRatio = 9.6
 
 // Measurement settings
 const unsigned long settleTimeMs = 3000; // time in ms to let motor reach const speed 
