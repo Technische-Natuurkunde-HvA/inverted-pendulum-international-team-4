@@ -11,6 +11,20 @@ Use the GitHub repository to store important project files (code, visuals includ
 
 ---
 
+# Week 4
+
+## 1. Progress description
+
+## 2. Code
+
+## 3. Measurement protocol
+
+## 4. Results
+
+## 5. Reflection 
+
+---
+
 # Week 3
 
 ## 1. Progress description
@@ -253,15 +267,6 @@ Our improvements for the next week will be to make a new design for the fly whee
 <p>When the motor is spinning with the wheel attached to it, there is a drop of around 2 Hz (or 12.5 RPM) as opposed to when the motor is spinning by itself. This is related to the friction between the wheel and the air. Even if this air resistance is very small, it still exists. However, we think this isn't significant enough to hinder anything needed for this project.</p>
 <p>There are lots of plausible reasons for the RPM not being exactly linear with the PWM. Air resistance could hinder the RPM when the PWM is close to 0 and is trying to break from the static friction when the motor isn't moving. This seems slightly plausible, as we've noticed that the motor moves very slightly at around 20 PWM (and instantly stops) but only really starts rotating at around 50 PWM. This is described in the graphs uploaded from Portugal's measurements in the "data" folder. Nevertheless, as air resistance shouldn't be significant both of these are probably caused by the internal resistance of the motor.  </p>
 
----
-
-# Week 4
-
-## 1. Progress description
-
-## 2. Code
-
-## 3. Measurement protocol
 
 ## 4. Results
 
