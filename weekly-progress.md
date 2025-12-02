@@ -250,14 +250,14 @@ To upload and modify the code arduino IDE is used. A serial moniter will print t
  <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/b4ce2a50-342c-4867-a038-0a8fc6dbc08e" />
 
 
-This graph deviates from the expected graph. This is because in reality there is friction
+The experimental graph deviates from the expected graph. This is because in reality there is friction.
 
 Here is a video of the Flywheel:
 
 
 https://github.com/user-attachments/assets/1bf1f06c-9694-4833-a927-8c63ff81f303
 
-This is the graph that shows the resulst of the group from Portugal and the group from the Netherlands combined:
+This is the graph that shows the results of the group from Portugal and the group from the Netherlands combined:
 <img width="1137" height="705" alt="image (1)" src="https://github.com/user-attachments/assets/78d7b7f8-44a5-4847-ad13-10750d1b12b2" />
 
 
