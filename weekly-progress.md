@@ -24,8 +24,7 @@ We also desiged a new wheel, this is the design:
 
 
 ## 2. Code
-The code used in the Netherlands:
-//for more information on the PID library: http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
+The code used //for more information on the PID library: http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
 
 #include <Wire.h>
 #include <PID_v1.h>
@@ -111,6 +110,8 @@ void readAndPrintAngle() {
   lastMs = currentMs;
   sig_angle_deg = (float)as5600.readAngle() * 0.0879;  //0.0879=360/4096;  // degrees [0..360)
 }
+in the Netherlands:
+
 ## 3. Results
 Here is a video that shows that the wheel can cope with disturptions:
 
