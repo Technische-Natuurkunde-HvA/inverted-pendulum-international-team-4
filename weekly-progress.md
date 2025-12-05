@@ -21,6 +21,9 @@ We also desiged a new wheel, this is the design:
 
 ![WhatsApp Image 2025-11-28 at 21 48 54](https://github.com/user-attachments/assets/de4e2c66-e9ea-4b5a-873d-361d33ec0148)
 
+We thought that a wheel with a bigger diameter would be better but it turns out that is not the case. It requiers more torque and we have a moter that specializes in turning fast and not in delivering torque.
+we made a new design with a smaller diameter:
+
 
 
 ## 2. Code
