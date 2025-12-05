@@ -14,9 +14,11 @@ Use the GitHub repository to store important project files (code, visuals includ
 # Week 4
 
 ## 1. Progress description
-In the Netherlands we worked on the stabilisation of the pendulum. Our goal was to stabalize the pendulum from a upright position. We set the point where the pendulum arm stood straight up as the starting point. In the first version of the code the wheel stopped turning when in was stabelized (in the starting point). When you pushed it to de left, the wheel starts sturning to the right, when you pushed it to the right, the wheel starts turning to the left. This stabelized him in the middle. We got this done pretty quickly. Then we wanted to make sure that he could cope with disruptions, this means that if you give it a tap, it will not destabilize again. We changed the PID controlers, in this version the wheel doesn't stop turning when it reach the starting point, and now it could cope with distruptions. 
-We wanted to add a new challenge: Stabelize the pendulum from un ustabeled position. This means that the arm is rested to the left or right arm, stards spinnign and stabelize itself while it can cope with distruptions. 
-We measured the angle of the arm when he is rested against one of the arms (right or left). We add a part to the code that when the arm reach this angle the wheel stops spinning until its completely still and then starts spinning so that the arm sweeps to the middle and stabelize itself.
+In the Netherlands we worked on the stabilisation of the pendulum. Our goal was to stabalize the pendulum. We set the point where the pendulum arm stood straight up as the starting point. In the first version of the code the wheel stopped turning when in was stabelized (in the starting point). When you pushed it to de left, the wheel starts sturning to the right, when you pushed it to the right, the wheel starts turning to the left. This stabelized the pendulum in the middle. We got this done pretty quickly. Then we wanted to make sure that he could cope with disruptions, this means that if you give it a tap, it will not destabilize again. We changed the PID controlers, in this version the wheel doesn't stop turning when it reach the starting point, and now it could handle distruptions (see video in results).
+We wanted to add a new challenge: Stabelize the pendulum from the bumper. This means that the arm is rested to the left or right bumper, starts spinning and stabilize itself while it can cope with distruptions. 
+We measured the angle of the arm when he is rested against one of the bumpers (right or left). We added a part to the code so when the arm reaches this angle, the wheel stops spinning until its completely still and then starts spinning so that the arm sweeps to the middle and stabelize itself. This helps to prevent the wheel from continuously spinning in 1 direction when fallen onto the bumper.
+We also desiged a new wheel, this is the design:
+
 
 
 
