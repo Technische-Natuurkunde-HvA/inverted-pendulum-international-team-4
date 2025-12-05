@@ -19,6 +19,7 @@ We wanted to add a new challenge: Stabelize the pendulum from the bumper. This m
 We measured the angle of the arm when he is rested against one of the bumpers (right or left). We added a part to the code so when the arm reaches this angle, the wheel stops spinning until its completely still and then starts spinning so that the arm sweeps to the middle and stabelize itself. This helps to prevent the wheel from continuously spinning in 1 direction when fallen onto the bumper.
 We also desiged a new wheel, this is the design:
 
+![WhatsApp Image 2025-11-28 at 21 48 54](https://github.com/user-attachments/assets/de4e2c66-e9ea-4b5a-873d-361d33ec0148)
 
 
 
