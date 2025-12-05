@@ -14,14 +14,22 @@ Use the GitHub repository to store important project files (code, visuals includ
 # Week 4
 
 ## 1. Progress description
+In the Netherlands we worked on the stabilisation of the pendulum. Our goal was to stabalize the pendulum from a upright position. We set the point where the pendulum arm stood straight up as the starting point. In the first version of the code the wheel stopped turning when in was stabelized (in the starting point). When you pushed it to de left, the wheel starts sturning to the right, when you pushed it to the right, the wheel starts turning to the left. This stabelized him in the middle. We got this done pretty quickly. Then we wanted to make sure that he could cope with disruptions, this means that if you give it a tap, it will not destabilize again. We changed the PID controlers, in this version the wheel doesn't stop turning when it reach the starting point, and now it could cope with distruptions. 
+We wanted to add a new challenge: Stabelize the pendulum from un ustabeled position. This means that the arm is rested to the left or right arm, stards spinnign and stabelize itself while it can cope with distruptions. 
+We measured the angle of the arm when he is rested against one of the arms (right or left). We add a part to the code that when the arm reach this angle the wheel stops spinning until its completely still and then starts spinning so that the arm sweeps to the middle and stabelize itself.
+
+
 
 ## 2. Code
 
-## 3. Measurement protocol
+## 3. Results
+Here is a video that shows that the wheel can cope with disturptions:
 
-## 4. Results
 
-## 5. Reflection 
+https://github.com/user-attachments/assets/f32561c5-b290-4a83-9060-c6511d0f13d1
+
+
+## 4. Reflection 
 
 ---
 
