@@ -127,8 +127,8 @@ https://github.com/user-attachments/assets/f32561c5-b290-4a83-9060-c6511d0f13d1
 
 
 ## 4. Reflection 
-
 ---
+Our improvements for the next week will improving the wheel so it has a smaller diameter and is able to spin much faster.
 
 # Week 3
 
