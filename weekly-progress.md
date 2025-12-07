@@ -19,12 +19,12 @@ We wanted to add a new challenge: Stabelize the pendulum from the bumper. This m
 We measured the angle of the arm when he is rested against one of the bumpers (right or left). We added a part to the code so when the arm reaches this angle, the wheel stops spinning until its completely still and then starts spinning so that the arm sweeps to the middle and stabelize itself. This helps to prevent the wheel from continuously spinning in 1 direction when fallen onto the bumper.
 We also desiged a new wheel, this is the design:
 
-![WhatsApp Image 2025-11-28 at 21 48 54](https://github.com/user-attachments/assets/de4e2c66-e9ea-4b5a-873d-361d33ec0148)
-
 We thought that a wheel with a bigger diameter would be better but it turns out that is not the case. It requiers more torque and we have a moter that specializes in turning fast and not in delivering torque.
 we made a new design with a smaller diameter:
 
+![WhatsApp Image 2025-11-28 at 21 48 54](https://github.com/user-attachments/assets/de4e2c66-e9ea-4b5a-873d-361d33ec0148)
 
+In Portugal, the progress was pretty similar. However, even when adjusting the PID, we noticed that the wheel would start deviating to either side with no clear pattern. It was theorized that this was due to the bearings, as we haven't started with dummies and have simply used regular bearings. They proportionate less friction when compared to dummies, allowing the main system to move easily, sending the PID to try to control it in a way it has yet to be programmed for, making it start accelerating the motor endlessly which doesn't proportionate inertia and doesn't correct the angle. Therefore, we decided to add a "deadzone", where the PWM output would be equal to zero when within 3 degrees from either side of the desired setpoint. This helped further stabilize the pendulum, but only temporarily, as the previous problem wasn't fixed and was instead moved to the two points at 3 degrees from the setpoint. 
 
 ## 2. Code
 The code used in the Netherlands:
@@ -117,7 +117,96 @@ The code used in the Netherlands:
     }
     ing PID_control_simple (1).ino…]()
 
+Code used in Portugal:
 
+```c
+//for more information on the PID library: http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
+
+#include <Wire.h>
+#include <PID_v1.h>
+#include <AS5600.h>
+
+AS5600 as5600;  //create sensor object
+
+unsigned long currentMs;                    //current time variable
+unsigned long lastMs;                       // time of last measurement
+const unsigned int FREE_RUN_PERIOD_MS = 5;  //sampling period in milliseconds
+double sig_angle_deg;                       // angle measurement
+
+// Motor control pins
+const int motorPin1 = 10;  // IN1
+const int motorPin2 = 11;  // IN2
+const int enablePin = 9;   // ENA (PWM pin for speed control)
+
+
+double setpoint = 195.05;  // Desired angle (vertical position)
+double output = 0;
+
+// PID parameters
+double Kp = 60.0;
+double Ki = 0.1;
+double Kd = 0.1;
+PID myPID(&sig_angle_deg, &output, &setpoint, Kp, Ki, Kd, DIRECT);
+
+void readAndPrintAngle();
+
+void setup() {
+  // Set motor control pins as outputs
+  pinMode(motorPin1, OUTPUT);
+  pinMode(motorPin2, OUTPUT);
+  pinMode(enablePin, OUTPUT);
+
+  Wire.begin();        // Initialize I2C
+  as5600.begin();      // Initialize sensor
+  lastMs = millis();   // Initialize timing
+  Serial.begin(9600);  // Initialize Serial Monitor
+  delay(2000);
+  Serial.print("Test: ");
+  Serial.println();
+
+  // Initialize PID controller
+  myPID.SetMode(AUTOMATIC);
+  myPID.SetSampleTime(FREE_RUN_PERIOD_MS);  // Set sample time in milliseconds
+  myPID.SetOutputLimits(-255, 255);         // YOU CAN ADJUST THESE OUTPUT LIMITS IF YOU WISH
+}
+
+void loop() {
+  // Read and print the angle from AS5600 at the sampling frequency
+  currentMs = millis();
+  if (currentMs - lastMs >= FREE_RUN_PERIOD_MS) {  // periodic sampling
+
+    readAndPrintAngle();
+
+    myPID.Compute();  // Calculate PID output
+
+    // Set motor direction based on PID output
+    if (output > 0) {
+      digitalWrite(motorPin1, LOW);
+      digitalWrite(motorPin2, HIGH);
+
+    } else {
+      digitalWrite(motorPin1, HIGH);
+      digitalWrite(motorPin2, LOW);
+    }
+    // Set a deadzone
+    if (abs(sig_angle_deg - setpoint) < 3) {
+      output = 0;
+    }
+    analogWrite(enablePin, abs(output));
+
+    // Print the angle to the Serial Monitor
+    Serial.print(sig_angle_deg);
+    Serial.print(" ");
+    // Print PID output for debugging
+    Serial.println(output);
+  }
+}
+
+void readAndPrintAngle() {
+  lastMs = currentMs;
+  sig_angle_deg = (float)as5600.readAngle() * 0.0879;  //0.0879=360/4096;  // degrees [0..360)
+}
+```
 
 ## 3. Results
 Here is a video that shows that the wheel can cope with disturptions:
@@ -128,7 +217,8 @@ https://github.com/user-attachments/assets/f32561c5-b290-4a83-9060-c6511d0f13d1
 
 ## 4. Reflection 
 ---
-Our improvements for the next week will improving the wheel so it has a smaller diameter and is able to spin much faster.
+Our improvements for the next week will be improving the wheel so it has a smaller diameter and is able to spin much faster.
+This will allow us to take on extra challenges such as starting upside down.
 
 # Week 3
 
