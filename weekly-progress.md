@@ -8,6 +8,18 @@ Below you find an example of the sections that must be included in each weekly p
 Use the **same document for all weeks**. For each week, use the **same headers and subheaders**.
 
 Use the GitHub repository to store important project files (code, visuals including videos and figures, data, etc.). If necessary refer to those files in this document using a hyperlink. 
+---
+
+# Week 5
+
+## 1. Progress description
+
+## 2. Code
+
+## 3. Results
+
+## 4. Reflection
+
 
 ---
 
@@ -218,7 +230,7 @@ https://github.com/user-attachments/assets/f32561c5-b290-4a83-9060-c6511d0f13d1
 ## 4. Reflection 
 ---
 Our improvements for the next week will be improving the wheel so it has a smaller diameter and is able to spin much faster.
-This will allow us to take on extra challenges such as starting upside down.
+This will allow us to take on extra challenges such as starting upside down. However, to do this we will need to implement some kind of logic to allow the pendulum to start swinging and gaining height, which it cannot do on its own when we can only allow the motor to be fed 12V. For the starting upside down challenge, we also have to extend the motor's cables as they don't have enough length, which will probably be achieved through soldering in Portugal. Anyhow, we still need to find a way to actually have the pendulum stabilized considering the use of bearings and no disturbances first. We also have to find a way to consistently measure the setpoint and to be certain that it's completly precise as this would mess with any subsequent steps, as they all rely on the angle measurement and how far it is from the setpoint.
 
 # Week 3
 
