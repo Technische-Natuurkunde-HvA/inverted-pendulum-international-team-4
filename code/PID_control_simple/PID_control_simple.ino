@@ -17,12 +17,12 @@ const int motorPin2 = 11;  // IN2
 const int enablePin = 9;   // ENA (PWM pin for speed control)
 
 
-double setpoint = 195.05;  // Desired angle (vertical position)
+double setpoint = 195.2;  // Desired angle (vertical position)
 double output = 0;
 
 // PID parameters
-double Kp = 60.0;
-double Ki = 0.1;
+double Kp = 70.0;
+double Ki = 10;
 double Kd = 0.1;
 PID myPID(&sig_angle_deg, &output, &setpoint, Kp, Ki, Kd, DIRECT);
 
@@ -67,7 +67,7 @@ void loop() {
       digitalWrite(motorPin2, LOW);
     }
     // Set a deadzone
-    if (abs(sig_angle_deg - setpoint) < 3) {
+    if (abs(sig_angle_deg - setpoint) < 1) {
       output = 0;
     }
     analogWrite(enablePin, abs(output));
