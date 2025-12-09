@@ -1,0 +1,6 @@
+- Another excellent weekly update! Your description of your progress and the issues you have encountered is very clear.
+- Great you continue to critically analyse and improve the design of your wheel.
+- Wonderful you included another video. Nice to see that you managed to stabilize the pendulum, and that it is resilient against disturbances.
+- Your PID control sketches seem to lack a correction formula for the motor’s dead zone.
+- When tuning the parameters make sure you have a systematic approach. Decide on which parameters to change, observe the results and based on the results, decide which parameter to change next and by how much.
+- Make sure that you report on the process and intermediate results. Explain how you made decisions and why, instead of just mentioning the final numbers.
