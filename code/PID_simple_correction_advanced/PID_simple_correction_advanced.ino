@@ -97,7 +97,7 @@ void loop() {
 
     myPID.Compute();  // Calculate PID output
 
-    // if the setpoint is close enough, keep pid output zero
+    // set a deadzone
     if (abs(sig_angle_deg - setpoint) < 0.5) {
       output = 0;
     }
