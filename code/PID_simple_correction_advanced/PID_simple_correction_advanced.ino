@@ -30,8 +30,8 @@ double output = 0;
 
 // PID parameters
 double Kp = 70.0;
-double Ki = 50;
-double Kd = 0.5;
+double Ki = 55;
+double Kd = 1;
 PID myPID(&sig_angle_deg, &output, &setpoint, Kp, Ki, Kd, DIRECT);
 
 // deadzone compensation
