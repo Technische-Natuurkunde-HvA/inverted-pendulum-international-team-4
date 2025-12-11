@@ -25,13 +25,13 @@ const unsigned long RPM_SAMPLE_MS = 50;  // calculate RPM every 50 ms
 unsigned long lastRpmMs = 0;
 
 
-double setpoint = 194.4;  // Desired angle (vertical position)
+double setpoint = 195.2;  // Desired angle (vertical position)
 double output = 0;
 
 // PID parameters
 double Kp = 70.0;
-double Ki = 10;
-double Kd = 0.1;
+double Ki = 50;
+double Kd = 0.5;
 PID myPID(&sig_angle_deg, &output, &setpoint, Kp, Ki, Kd, DIRECT);
 
 // deadzone compensation
