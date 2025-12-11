@@ -15,9 +15,17 @@ double sig_angle_deg;                       // angle measurement
 const int motorPin1 = 10;  // IN1
 const int motorPin2 = 11;  // IN2
 const int enablePin = 9;   // ENA (PWM pin for speed control)
+const int encoderPin = 2;  // (single channel)
+
+volatile int pulseCount = 0;         // pulse counter
+const int pulsesPerRevolution = 11;  // pulses per rotation from each encoder wire
+const double gearRatio = 9.6;        // reduction ratio of the motor
+
+const unsigned long RPM_SAMPLE_MS = 50;  // calculate RPM every 500 ms
+unsigned long lastRpmMs = 0;
 
 
-double setpoint = 195.2;  // Desired angle (vertical position)
+double setpoint = 194.4;  // Desired angle (vertical position)
 double output = 0;
 
 // PID parameters
@@ -27,16 +35,23 @@ double Kd = 0.1;
 PID myPID(&sig_angle_deg, &output, &setpoint, Kp, Ki, Kd, DIRECT);
 
 void readAndPrintAngle();
+void countPulse() {
+  pulseCount++;
+}
 
 void setup() {
   // Set motor control pins as outputs
   pinMode(motorPin1, OUTPUT);
   pinMode(motorPin2, OUTPUT);
   pinMode(enablePin, OUTPUT);
+  pinMode(encoderPin, INPUT_PULLUP);
 
-  Wire.begin();        // Initialize I2C
-  as5600.begin();      // Initialize sensor
-  lastMs = millis();   // Initialize timing
+  attachInterrupt(digitalPinToInterrupt(encoderPin), countPulse, RISING);
+
+  Wire.begin();       // Initialize I2C
+  as5600.begin();     // Initialize sensor
+  lastMs = millis();  // Initialize timing
+  lastRpmMs = millis();
   Serial.begin(9600);  // Initialize Serial Monitor
   delay(2000);
   Serial.print("Test: ");
@@ -67,16 +82,36 @@ void loop() {
       digitalWrite(motorPin2, LOW);
     }
     // Set a deadzone
-    if (abs(sig_angle_deg - setpoint) < 1) {
+    if (abs(sig_angle_deg - setpoint) < 0.5) {
       output = 0;
     }
     analogWrite(enablePin, abs(output));
+    if (millis() - lastRpmMs >= RPM_SAMPLE_MS) {
+      unsigned long pulses;
+      noInterrupts();
+      pulses = pulseCount;
+      pulseCount = 0;  // reset for next interval
+      interrupts();
 
-    // Print the angle to the Serial Monitor
-    Serial.print(sig_angle_deg);
-    Serial.print(" ");
-    // Print PID output for debugging
-    Serial.println(output);
+      double interval_s = (millis() - lastRpmMs) / 1000.0;  // seconds
+      lastRpmMs = millis();
+
+      double revs = (double)pulses / (double)pulsesPerRevolution;
+      double revs_per_second = 0.0;
+      if (interval_s > 0.0) revs_per_second = revs / interval_s;
+      double motorRPM = revs_per_second * 60.0;
+
+      double outputRPM = motorRPM / gearRatio;
+
+
+      // Print the angle to the Serial Monitor
+      Serial.print(sig_angle_deg);
+      Serial.print(" ");
+      // Print PID output for debugging
+      Serial.print(output);
+      Serial.print(" ");
+      Serial.println(outputRPM);
+    }
   }
 }
 
