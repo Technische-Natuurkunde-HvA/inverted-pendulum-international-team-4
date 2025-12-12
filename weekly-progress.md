@@ -13,11 +13,14 @@ Use the GitHub repository to store important project files (code, visuals includ
 # Week 5
 
 ## 1. Progress description
-
+In the Netherlands, we were working on the challenges. Our goal was to stabilize the pendulum completely upright, from a upside down starting possition. On Tuesday, we were really struggling. We couldn't even get it to move up from the barrier. We switched our wheel to a new one with a smaller diameter of 10 cm.
+When we added this, the wheel had far too little strength, so the new wheel only worked against us.
+On Friday, we continued, this time with our first wheel with a diameter of 15 cm. We had removed the barriers but still couldn't stabilize it from below to above. Then we switched to the largest wheel with a diameter of 20 cm.
+We finally succeeded! You can find a video of this in the "Results" section.
 ## 2. Code
 
 ## 3. Results
-
+ 
 ## 4. Reflection
 
 
