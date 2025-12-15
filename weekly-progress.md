@@ -3,11 +3,11 @@
 # Week 5
 
 ## 1. Progress description
-In the Netherlands, we were working on the challenges. Our goal was to stabilize the pendulum completely upright, from a upside down starting possition. On Tuesday, we were really struggling. We couldn't even get it to move up from the barrier. We switched our wheel to a new one with a smaller diameter of 10 cm.
+<p>In the Netherlands, we were working on the challenges. Our goal was to stabilize the pendulum completely upright, from a upside down starting possition. On Tuesday, we were really struggling. We couldn't even get it to move up from the barrier. We switched our wheel to a new one with a smaller diameter of 10 cm.
 When we added this, the wheel had far too little strength, so the new wheel only worked against us.
-On Friday, we continued, this time with our first wheel with a diameter of 15 cm. We had removed the barriers but still couldn't stabilize it from below to above. Then we switched to the largest wheel with a diameter of 20 cm.
-We finally succeeded! You can find a video of this in the "Results" section.
-As for Portugal, since we didn't have dummies and had always worked with bearings since the start of the project, it was natural to keep going in that direction and try to perfect the pendulum with the bearings. We took on the advanced data analysis, adding the measurement of the RPM to the script as well as removing some counterweight. We also experimented with a very brief correction formula for the motor's deadzone that would add or subtract values directly from the PWM. However, this didn't really work, so we redid it by actually adding the motor's deadzone along with a small precaution to try to avoid jitter instead of trying to weasel ourselves out of this in a simple way. 
+On Friday, we continued, this time with our first wheel with a diameter of 15 cm. We had removed the barriers but still couldn't stabilize it from below to above. Then we switched to the largest wheel with a diameter of 20 cm.<p>
+<p>We finally succeeded! You can find a video of this in the "Results" section.<p>
+<p>As for Portugal, since we didn't have dummies and had always worked with bearings since the start of the project, it was natural to keep going in that direction and try to perfect the pendulum with the bearings. We took on the advanced data analysis, adding the measurement of the RPM to the script as well as removing some counterweight. We also experimented with a very brief correction formula for the motor's deadzone that would add or subtract values directly from the PWM. However, this didn't really work, so we redid it by actually adding the motor's deadzone along with a small precaution to try to avoid jitter instead of trying to weasel ourselves out of this in a simple way. <p>
 ## 2. Code
 The code used in the Netherlands:
 
