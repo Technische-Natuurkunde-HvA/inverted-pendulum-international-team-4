@@ -45,7 +45,8 @@ Link to measurement files in `data/`:
 
 ![RPM as a function of PWM](data/graphs/RPM_as_a_function_of_PWM/RPM_Comparison.jpg)
 
-- [Watch the pendulum balancing](https://github.com/user-attachments/assets/a8724a11-2e41-4fb6-b088-a9859eba4981)
+- [Watch the pendulum balancing](https://github.com/user-attachments/assets/33b4c6e5-de3b-42a6-be7a-60adbd040c9a)
+- [Watch the pendulum balancing again](https://github.com/user-attachments/assets/a8724a11-2e41-4fb6-b088-a9859eba4981)
 - [Watch the pendulum balancing from upside down](https://github.com/user-attachments/assets/08ec3768-02b8-4cd1-acb5-1238e4f26114)
 ---
 ## 6. Results
