@@ -23,6 +23,7 @@ Explain in words first (for non-technical people), then more mathematically
 - The controller reads the angle and angular velocity and chooses the motor
 command.
 
+<img width="1024" height="370" alt="1715776245-pid-block-diagram" src="https://github.com/user-attachments/assets/6fbe90b9-d3e6-4e79-8d7c-aaf1deb1b7b5" />
 
 
 ---
