@@ -1,4 +1,4 @@
-# Conditions for the measurements
+# Conditions for the graphs
 
 ## Measurements used in csv_data:
 motor_data_8screws_8bolts_evenly_distributed.csv
