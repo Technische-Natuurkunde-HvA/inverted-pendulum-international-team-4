@@ -42,19 +42,17 @@ Explain:
 Link to measurement files in `data/`:
 - [Measurements with no load](data/csv_data/motor_data_no_load.csv)
 - [Measurements with the wheel and 8 bolts/screws](data/csv_data/motor_data_8screws_8bolts_evenly_distributed.csv)
-Include images created from those data:
+
 ![RPM as a function of PWM](data/graphs/RPM_as_a_function_of_PWM/RPM_Comparison.jpg)
+
 - [Watch the pendulum balancing](https://github.com/user-attachments/assets/a8724a11-2e41-4fb6-b088-a9859eba4981)
 - [Watch the pendulum balancing from upside down](https://github.com/user-attachments/assets/08ec3768-02b8-4cd1-acb5-1238e4f26114)
 ---
 ## 6. Results
 Summarize:
-- Did the pendulum stabilize?
-- Typical settling time
-- Sensitivity to disturbances
-- Limitations of the design
-Include relevant plots:
-![Control effort over time](../visuals/control_effort.png)
+- The pendulum did stabilize.
+- With bearings, the pendulum resisted disturbances as far as 10 degrees, as long as it wasn't too fast. 
+- The design of pendulum heavily limits its precision due to how precise the setpoint measurement is. It is not only very difficult to measure as it also changes over time and during the stabilizing process. 
 ---
 ## 7. Project Timeline (from `/progress`)
 Explain that the weekly reports in `progress/` document the evolution.
@@ -64,10 +62,16 @@ Optionally link to them:
 - ...
 ---
 ## 8. Team and Credits
-- Student names and universities
+- Technische Natuurkunde program (HvA)
+- Instituto Superior de Engenharia de Lisboa (ISEL)
+- Cisca Wams
+- Splinter Kohlbrugge
+- Thijs Ritter
+- David Varela
+- Gabriel Marques
 - Supervisors
 - Collaborating institutions
 ---
 ## 9. Repository
 Project repository:
-- [GitHub: inverted-pendulum-international-team-x](https://github.com/TechnischeNatuurkunde-HvA/inverted-pendulum-international-team-x)
+- [GitHub: inverted-pendulum-international-team-x](https://github.com/TechnischeNatuurkunde-HvA/inverted-pendulum-international-team-4)
