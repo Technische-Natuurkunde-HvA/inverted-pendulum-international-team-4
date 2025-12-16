@@ -22,8 +22,9 @@ Explain in words first (for non-technical people), then more mathematically
 - By accelerating or braking the reaction wheel, we generate torque.
 - The controller reads the angle and angular velocity and chooses the motor
 command.
-(You can show block diagrams as images from `visuals/`.)
-![Control block diagram](../visuals/control_block_diagram.png)
+
+
+
 ---
 ## 4. Implementation
 ### 4.1 Arduino Control Software (folder `code/`)
