@@ -422,11 +422,12 @@ This is the video of the compteted challenge:
 https://github.com/user-attachments/assets/08ec3768-02b8-4cd1-acb5-1238e4f26114
 
 https://github.com/user-attachments/assets/a8724a11-2e41-4fb6-b088-a9859eba4981
+(The pendulum was stabilized and not rotating before the start of this video. We only have some eyewitnesses such as the teachers.)
 
 
  
 ## 4. Reflection
-
+Even if the pendulum can balance itself, with the use of bearings the friction is too small for it to stabilize consistently. We were only able to stabilize it completly 3 times and as such have no actual video evidence of this. We think this is mainly due to the setpoint angle. While the sensor itself is precise, the setpoint changes everytime the pendulum swings. Regardless of what we tried to do such as taping the magnet or fixing the sensor the best way we could. This was a major drawback since measuring the setpoint itself took longer than testing a specific configuration for the PID, impacting how well we could actually balance the pendulum. In an ideal situation we could've set our script's deadzone to 0.01 degrees around the setpoint and it would've balanced fine with swings so small they would barely be noticeable, that are in all actuality, impossible, since the setpoint always changes ever so slightly.
 
 ---
 
