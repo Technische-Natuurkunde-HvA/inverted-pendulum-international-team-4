@@ -40,12 +40,12 @@ Explain:
 ---
 ## 5. Experiments and Data
 Link to measurement files in `data/`:
-- [Measurements with no load](../data/csv_data/motor_data_no_load.csv)
-- [Measurements with the wheel and 8 bolts/screws](../data/csv_data/motor_data_8screws_8bolts_evenly_distributed.csv)
+- [Measurements with no load](data/csv_data/motor_data_no_load.csv)
+- [Measurements with the wheel and 8 bolts/screws](data/csv_data/motor_data_8screws_8bolts_evenly_distributed.csv)
 Include images created from those data:
-![Angle over time](../data/graphs/RPM_Comparison.jpg)
-- [Watch the pendulum balancing](../visuals/stabilization_demo.mp4)
-Or link to YouTube, if you prefer.
+![RPM as a function of PWM](data/graphs/RPM_as_a_function_of_PWM/RPM_Comparison.jpg)
+- [Watch the pendulum balancing](https://github.com/user-attachments/assets/a8724a11-2e41-4fb6-b088-a9859eba4981)
+- [Watch the pendulum balancing from upside down](https://github.com/user-attachments/assets/08ec3768-02b8-4cd1-acb5-1238e4f26114)
 ---
 ## 6. Results
 Summarize:
