@@ -40,11 +40,10 @@ Explain:
 ---
 ## 5. Experiments and Data
 Link to measurement files in `data/`:
-- [Step response data](../data/step_response.csv)
-- [Stabilization log](../data/stabilization_run1.csv)
+- [Measurements with no load](../data/csv_data/motor_data_no_load.csv)
+- [Measurements with the wheel and 8 bolts/screws](../data/csv_data/motor_data_8screws_8bolts_evenly_distributed.csv)
 Include images created from those data:
-![Angle over time](../visuals/angle_vs_time.png)
-If you have videos in `visuals/`:
+![Angle over time](../data/graphs/RPM_Comparison.jpg)
 - [Watch the pendulum balancing](../visuals/stabilization_demo.mp4)
 Or link to YouTube, if you prefer.
 ---
