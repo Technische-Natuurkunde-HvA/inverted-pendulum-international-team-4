@@ -1,9 +1,11 @@
-# Measurements used in csv_data:
+# Conditions for the measurements
+
+## Measurements used in csv_data:
 motor_data_8screws_8bolts_evenly_distributed.csv
 motor_data_no_load.csv
 
 
-# Voltage from the DC Power Supply: 13.613V
+## Voltage from the DC Power Supply: 13.613V
 Maximum electric current from the DC Power Supply: 1A
 Maximum voltage measured at the DC Motor: 12V
 
