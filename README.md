@@ -16,8 +16,7 @@ An inverted pendulum is a system where a weight is balanced upside down, making 
 - Power electronics and safety features
 ---
 ## 3. Control Principle
-Explain in words first (for non-technical people), then more mathematically
-(for technical readers).
+
 - The pendulum is naturally unstable in the upright position.
 - By accelerating or braking the reaction wheel, we generate torque.
 - The controller reads the angle and angular velocity and chooses the motor
