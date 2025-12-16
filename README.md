@@ -2,8 +2,9 @@
 This project was carried out by an international team of students at the Technische Natuurkunde program (HvA) and Instituto Superior de Engenharia de Lisboa (ISEL). The objective is to stabilize an inverted pendulum using a reaction wheel driven by an electric motor.
 ---
 ## 1. Project Motivation
-(Short explanation for non-technical readers:
-why inverted pendulums are interesting, balancing, control theory, etc.)
+
+An inverted pendulum is a system where a weight is balanced upside down, making it naturally unstable. We think of it as an interesting project due to how tough of a challenge it is in physic's and engineering. How to keep something unstable from falling over? The solution comes from control theory, which uses math to create a system that can mantain the balance of a pendulum. But this time, it just so happens to be upside down, trying to balance at the very top. It's all about making very tiny and quick adjustments to keep things stable.
+
 ---
 ## 2. System Overview
 Describe the mechanical and electronic setup.
