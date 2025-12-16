@@ -74,4 +74,4 @@ Optionally link to them:
 ---
 ## 9. Repository
 Project repository:
-- [GitHub: inverted-pendulum-international-team-x](https://github.com/TechnischeNatuurkunde-HvA/inverted-pendulum-international-team-4)
+- [GitHub: inverted-pendulum-international-team-4](https://github.com/Technische-Natuurkunde-HvA/inverted-pendulum-international-team-4)
