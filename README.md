@@ -1,7 +1,5 @@
 # Reaction Wheel Inverted Pendulum – Team 4
-This project was carried out by an international team of students at the
-Technische Natuurkunde program (HvA). The objective is to stabilize an
-inverted pendulum using a reaction wheel driven by an electric motor.
+This project was carried out by an international team of students at the Technische Natuurkunde program (HvA) and Instituto Superior de Engenharia de Lisboa (ISEL). The objective is to stabilize an inverted pendulum using a reaction wheel driven by an electric motor.
 ---
 ## 1. Project Motivation
 (Short explanation for non-technical readers:
