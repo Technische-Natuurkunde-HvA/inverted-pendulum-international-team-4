@@ -51,7 +51,7 @@ Link to measurement files in `data/`:
 ---
 ## 6. Results
 Summarize:
-- The pendulum did stabilize.
+- We've been able to stabelize the pendulum. In the Netherlands we managed to get it to balance from bottom to top, but because the same barings could not be used in           Portugal, this did not work here.
 - With bearings, the pendulum resisted disturbances as far as 10 degrees, as long as it wasn't too fast. 
 - The design of pendulum heavily limits its precision due to how precise the setpoint measurement is. It is not only very difficult to measure as it also changes over time and during the stabilizing process. 
 ---
