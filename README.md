@@ -56,12 +56,7 @@ Summarize:
 - The design of pendulum heavily limits its precision due to how precise the setpoint measurement is. It is not only very difficult to measure as it also changes over time and during the stabilizing process. 
 ---
 ## 7. Project Timeline (from `/progress`)
-Explain that the weekly reports in `progress/` document the evolution.
-Optionally link to them:
-- [Week 1 report](../progress/week01.md)
-- [Week 2 report](../progress/week02.md)
-- ...
----
+The Weekly Progress Reports describe the work we've done on the project each week. They detail the results we achieved, the challenges we encountered, our solutions, and our goals for the following week. These weekly reports provide a clear overview of our project progress. If we want to do a similar project later on, we can easily read in these reports what steps we need to take and what problems we need to think about.
 ## 8. Team and Credits
 - Technische Natuurkunde program (HvA)
 - Instituto Superior de Engenharia de Lisboa (ISEL)
