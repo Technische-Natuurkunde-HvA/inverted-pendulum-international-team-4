@@ -14,6 +14,7 @@ An inverted pendulum is a system where a weight is balanced upside down, making 
 - Reaction wheel attached to a DC motor
 - Arduino (or compatible microcontroller)
 - Power electronics and safety features
+- Multimeter to check the exact voltage reaching the motor
 ---
 ## 3. Control Principle
 
