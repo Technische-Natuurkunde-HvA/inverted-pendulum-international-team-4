@@ -8,7 +8,7 @@ An inverted pendulum is a system where a weight is balanced upside down, making 
 ---
 ## 2. System Overview
 
-<img width="472" height="602" alt="oef3inverted2" src="https://github.com/user-attachments/assets/50021137-85a7-4959-b0f2-3bd480b67d1e" />
+<img width="472" height="602" alt="oef3inverted3" src="https://github.com/user-attachments/assets/09c07b71-0edc-4b1d-bb7c-4b866ae67955" />
 
 - Pendulum arm with angle sensor
 - Reaction wheel attached to a DC motor
